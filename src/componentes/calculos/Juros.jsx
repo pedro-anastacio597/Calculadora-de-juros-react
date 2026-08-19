@@ -9,7 +9,7 @@ function calcularJurosSimples({capital, taxa, tempo}){
         let J = c * ta * t;
         let M= c + J;
 
-        const dadosmes= {juros: J.toFixed(2), montante: M.toFixed(2), tempo: t, tipo: "Simples"}
+        const dadosmes= {juros: J.toFixed(2), montante: M.toFixed(2), tempo: t}
         dadosjurossimples.push(dadosmes)
     };
 
@@ -27,7 +27,7 @@ function calcularJurosCompostos({capital, taxa, tempo}){
         let M = c * (1 + ta)**t;
         let J = M - c;
         
-        const dadosmes= {juros: J.toFixed(2), montante: M.toFixed(2), tempo: t, tipo: "Composto"} 
+        const dadosmes= {juros: J.toFixed(2), montante: M.toFixed(2), tempo: t} 
 
         dadosjuroscomposto.push(dadosmes)
     };

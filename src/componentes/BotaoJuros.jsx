@@ -1,6 +1,6 @@
 function BotaoJuros({onCalcular}) {
     return(
-        <button onClick={onCalcular}>
+        <button onClick={() => onCalcular()}>
             Calcular juros
         </button>
     );
